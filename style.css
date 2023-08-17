@@ -1,0 +1,92 @@
+*{margin: 0%; padding: 0%;}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+#titulo{
+    text-align: center;
+    flex: 2;
+}
+.inicio{
+    display: flex;
+    font-family: 'Roboto', sans-serif ;
+    gap: 5px;
+    list-style: none;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+.inicio a{
+    text-decoration: none;
+    color: white;
+}
+#total{
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+#card{
+    border: solid 0.5px gray;
+    padding: 20px;
+    margin: 10px;
+}
+.image{
+    max-width: 90%;
+} 
+#card:hover {
+    max-width: 120%;
+    box-shadow: 3px 4px rgb(48, 48, 48);
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+} 
+#contenedor{
+    padding: auto; margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    grid-gap: 13px;
+}
+.debajo-tarjeta{
+    background-color: white;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: left;
+}
+.ver{
+
+    color: burlywood;
+    text-align: left;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: oblique;
+}
+#botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+}
+button{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+footer{
+    background-color: black;
+    text-align: left ;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    flex: auto;
+}
+footer p{
+    padding-left: 20px;
+}
+
+@media (max-width: 36rem){
+    .inicio{
+        visibility:collapse;
+    }
+}
